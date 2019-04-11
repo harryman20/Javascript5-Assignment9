@@ -1,0 +1,15 @@
+<div class="create-content">
+  <mat-form-field>
+    <input matInput placeholder="Body" [(ngModel)]="contentItem.body">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Author" [(ngModel)]="contentItem.author">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Title" [(ngModel)]="contentItem.title">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Type" [(ngModel)]="contentItem.type">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="save()">Save me!</button>
+</div>

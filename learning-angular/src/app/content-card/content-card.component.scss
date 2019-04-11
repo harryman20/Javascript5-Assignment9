@@ -1,0 +1,22 @@
+.container{
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+mat-card.last{
+  border: 2px solid #000000;
+}
+
+mat-card.news{
+  border-color: #089564;
+}
+
+mat-card.stories{
+    border-color: #892456;
+}
+
+img{
+  width: 90px;
+  margin: 0 auto;
+  display: block;
+}

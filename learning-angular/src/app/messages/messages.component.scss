@@ -1,0 +1,19 @@
+.message-wrapper{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 200px;
+  height: 100px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  background-color:#fff;
+  padding: 15px;
+  border-radius:10px;
+  transform: scale(.5);
+  overflow: scroll;
+}
+h2{
+  margin-top: 0;
+}
+button{
+  float: right;
+}

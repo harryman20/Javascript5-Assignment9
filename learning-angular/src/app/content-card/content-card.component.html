@@ -1,0 +1,30 @@
+<div class="container">
+  <mat-card class="{{item.type}}">
+    <img mat-card-image (click)="clickImage()" [src]="item.imgUrl">
+    <mat-card-header>
+      <mat-card-title class="id">
+        <strong>Id:</strong> {{item.id}}
+      </mat-card-title>
+      <mat-card-subtitle class="body">
+        <strong>Body:</strong> {{item.body}}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="author">
+        <strong>Author:</strong> {{item.author}}
+      </div>
+      <div class="type">
+        <strong>Type:</strong> {{item.type}}
+      </div>
+      <div class="tags">
+        <strong>Tags:</strong><span *ngFor="let tag of item.tags">{{tag}} </span>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <div>
+        <a mat-raised-button color="warn" [routerLink]="['/content',item.id]"routerLinkActive="active">Content Detail</a><br>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

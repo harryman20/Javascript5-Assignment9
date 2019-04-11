@@ -1,0 +1,10 @@
+.create-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.create-content > * {
+  width: 50%;
+}

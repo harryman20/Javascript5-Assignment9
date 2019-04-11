@@ -1,0 +1,11 @@
+<app-create-content [(list)]="content"></app-create-content>
+
+<mat-form-field>
+  <input matInput placeholder="Type" class="test" [(ngModel)]="titleCheck">
+</mat-form-field>
+
+<button mat-raised-button color="warn" (click)="clickEvent()">Click me for an update!</button>
+
+<p *ngIf="content">
+  <app-content-card *ngFor="let item of content; last as isLast" [item]="item" [last]="isLast"></app-content-card>
+</p>
